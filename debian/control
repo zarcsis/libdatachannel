@@ -8,5 +8,22 @@ Section: libs
 Package: libdatachannel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: C/C++ WebRTC network library
+Description: C/C++ WebRTC network library (runtime)
  C/C++ WebRTC network library featuring Data Channels, Media Transport, and WebSockets.
+ This package provides the shared libraries.
+
+Package: libdatachannel-dev
+Architecture: any
+Section: libdevel
+Depends: libdatachannel (= ${binary:Version}), ${misc:Depends}
+Description: C/C++ WebRTC network library (development)
+ C/C++ WebRTC network library featuring Data Channels, Media Transport, and WebSockets.
+ This package provides the development headers and cmake config files.
+
+Package: libdatachannel-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: C/C++ WebRTC network library (documentation)
+ C/C++ WebRTC network library featuring Data Channels, Media Transport, and WebSockets.
+ This package provides the documentation.
