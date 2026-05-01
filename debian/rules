@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --buildsystem=cmake --sourcedirectory=libdatachannel
+
+override_dh_auto_configure:
+	dh_auto_configure --sourcedirectory=libdatachannel -- \
+		-DNO_EXAMPLES=ON \
+		-DNO_TESTS=ON \
+		-DUSE_SYSTEM_SRTP=OFF \
+		-DUSE_SYSTEM_JUICE=OFF \
+		-DUSE_SYSTEM_USRSCTP=OFF

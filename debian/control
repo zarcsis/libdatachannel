@@ -1,0 +1,12 @@
+Source: libdatachannel
+Priority: optional
+Maintainer: DroneProUkr <admin@droneproukr>
+Build-Depends: debhelper-compat (= 13), cmake, libssl-dev, pkg-config
+Standards-Version: 4.6.0
+Section: libs
+
+Package: libdatachannel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: C/C++ WebRTC network library
+ C/C++ WebRTC network library featuring Data Channels, Media Transport, and WebSockets.
