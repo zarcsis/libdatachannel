@@ -1,6 +1,6 @@
 Source: libdatachannel
 Priority: optional
-Maintainer: DroneProUkr <admin@droneproukr>
+Maintainer: special-delivery <development@special-delivery.org>
 Build-Depends: debhelper-compat (= 13), cmake, libssl-dev, pkg-config
 Standards-Version: 4.6.0
 Section: libs
