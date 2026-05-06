@@ -2,6 +2,3 @@
 
 %:
 	dh $@ --buildsystem=cmake --sourcedirectory=libdatachannel
-
-override_dh_auto_configure:
-	dh_auto_configure --sourcedirectory=libdatachannel --
